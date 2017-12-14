@@ -1,4 +1,10 @@
+Host:
 <?php 
 echo gethostname();
-phpinfo();
+//phpinfo();
+?>
+<br>
+Ansible was last executed by:
+<?php
+echo getenv("ansibleExecuter");
 ?>
