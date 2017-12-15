@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-    html, body{
-        height: 100%;
-    }
+        /*html, body{
+            height: 100%;
+        }
         body.machine1{
-            background: #11998e;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #11998e;  
+            background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+            background: linear-gradient(to right, #38ef7d, #11998e); 
         }
         body.machine2{
-            background: #fc4a1a;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+            background: #fc4a1a;  
+            background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+            background: linear-gradient(to right, #f7b733, #fc4a1a);         
         }
         body{
             display: flex;
@@ -38,7 +38,7 @@
         }
         tr td:first-child {
             text-align: right;
-        }
+        }*/
     </style>
 </head>
 <body class="<?php echo gethostname(); ?>">
