@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+    html, body{
+        height: 100%;
+    }
         body.machine1{
             background: #11998e;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
@@ -26,23 +29,29 @@
         div{
             text-align: center;
             font-size: 2rem;
+            font-family: monospace;
             color: #FFF;
-            text-transform: capitalize;
+            text-transform: uppercase;
+        }
+        tr td{
+            text-align: left;
+        }
+        tr td:first-child {
+            text-align: right;
         }
     </style>
 </head>
 <body class="<?php echo gethostname(); ?>">
     <div>
-    Host:
-    <?php 
-    echo gethostname();
-    //phpinfo();
-    ?>
-    <br>
-    Ansible was last executed by:
-    <?php
-    echo getenv("ansibleExecuter");
-    ?>
+    <table>
+        <tr>
+            <td>Host:</td>
+            <td><?php echo gethostname();?></td>
+        </tr>
+        <tr>
+            <td>Ansible was last executed by:</td>
+            <td><?php echo getenv("ansibleExecuter");?></td>
+    </table>
     </div>
 </body>
 </html>
