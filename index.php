@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        html, body{
+        /*html, body{
             height: 100%;
         }
         body.machine1{
@@ -38,7 +38,7 @@
         }
         tr td:first-child {
             text-align: right;
-        }
+        }*/
     </style>
 </head>
 <body class="<?php echo gethostname(); ?>">
